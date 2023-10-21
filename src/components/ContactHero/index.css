@@ -1,0 +1,28 @@
+.contactHeroHeading {
+    color: #329683;
+    font-family: Satoshi;
+    font-size: 105px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 98.7px; /* 94% */
+    letter-spacing: -6.3px;
+}
+
+.contactParagraphy {
+    color: #000;
+    font-family: Manrope;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 25.2px; /* 140% */
+    letter-spacing: -0.18px;
+    text-transform: uppercase;
+}
+
+
+@media (max-width:900px) {
+    .contactHeroHeading {
+        font-size: 40px;
+        letter-spacing: 2px;
+    }
+}
