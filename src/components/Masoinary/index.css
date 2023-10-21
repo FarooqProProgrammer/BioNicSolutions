@@ -1,0 +1,90 @@
+.MasoneryHeaderBox {
+  background: radial-gradient(50% 50% at 50% 50%, rgba(1, 1, 19, 0.5) 0%, rgba(12, 66, 56, 0.5) 100%), radial-gradient(49.95% 49.95% at 50% 0.03%, #0c4238 0%, #010113 100%);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+@media (max-width: 1000px) {
+  .MasoneryHeaderBox {
+    flex-direction: column;
+    width: 100%;
+    justify-content: start;
+    align-items: start;
+    padding-bottom: 20px;
+  }
+}
+.MasoneryHeaderBox .MasoneryHeaderBoxList {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+.MasoneryHeaderBox .MasoneryHeaderBoxList h3 {
+  color: #fff;
+  font-family: Satoshi;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 91px; /* 100% */
+  letter-spacing: -5.46px;
+  text-transform: uppercase;
+}
+.MasoneryHeaderBox .MasoneryHeaderBoxList .MasoneryHeaderBoxListChips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.MasoneryHeaderBox .MasoneryHeaderBoxList .MasoneryHeaderBoxListChips .Chips {
+  border-radius: 40px;
+  border: 1px solid var(--Accent, #e0ec5b);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.MasoneryHeaderBox .MasoneryHeaderBoxList .MasoneryHeaderBoxListChips .Chips h3 {
+  color: #FFF;
+  font-family: IBM Plex Mono;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 13px; /* 100% */
+  letter-spacing: -0.13px;
+  text-transform: uppercase;
+}
+.MasoneryHeaderBox button {
+  display: flex;
+  min-height: 56px;
+  padding: 0px 40px;
+  justify-content: center;
+  align-items: center;
+  gap: 23.66px;
+  border-radius: 40px;
+  background: var(--Accent, #e0ec5b);
+}
+
+.Masonary {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 30px 50px 20px 50px;
+  gap: 20px;
+  background: radial-gradient(50% 50% at 50% 50%, rgba(1, 1, 19, 0.5) 0%, rgba(12, 66, 56, 0.5) 100%), radial-gradient(49.95% 49.95% at 50% 0.03%, #0c4238 0%, #010113 100%);
+  @apply place-items-center w-full;
+}
+@media (max-width: 1000px) {
+  .Masonary {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .Masonary article {
+    width: 100%;
+    margin-right: 10px;
+  }
+}
+.Masonary .MasonaryCenterLine {
+  width: 1px;
+  height: 80%;
+  background-color: #0c4238;
+}/*# sourceMappingURL=index.css.map */

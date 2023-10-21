@@ -1,0 +1,32 @@
+.TabHeading {
+    width: 100%;
+    @apply py-3 flex justify-between items-start;
+
+    @media (max-width:1000px) {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    h3 {
+        color: var(--Secondary, #329683);
+        font-family: Manrope;
+        font-size: 40px;
+        font-style: normal;
+        font-weight: 800;
+        line-height: 91px;
+        letter-spacing: -5.46px;
+        text-transform: uppercase;
+        padding-left: 10px;
+    }
+    button {
+        display: flex;
+        min-height: 56px;
+        padding: 0px 40px;
+        justify-content: center;
+        align-items: center;
+        gap: 23.06px;
+        border-radius: 40px;
+        background: var(--Secondary, #329683);
+        color: white;
+    }
+}

@@ -1,0 +1,196 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.ChooseUs {
+    display: flex;
+    width: 100%;
+    max-width: 1760px;
+    padding: 0px 40px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 39.19px;
+
+    .ChooseUsHeader {
+        display: flex;
+        max-width: 60%;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+
+        h3 {
+            color: var(--Secondary, #329683);
+            font-family: Satoshi;
+            font-size: 50px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 91px;
+            /* 100% */
+            letter-spacing: -5.46px;
+            text-transform: uppercase;
+        }
+
+        p {
+            color: #7D8387;
+            font-family: Manrope;
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 33.6px;
+            /* 140% */
+            letter-spacing: -0.48px;
+        }
+
+
+    }
+
+    .ChooseUsContainer {
+        display: flex;
+        width: 100%;
+        height: auto;
+        
+        flex-wrap: wrap;
+        padding: 30px;
+        border-top: 1px solid rgba(19, 196, 163, 0.50);
+
+        @media (max-width:1110px) {
+            flex-direction: column;
+            border-right: none;
+            border-bottom: 1px solid rgba(19, 196, 163, 0.50);
+            padding: 10px;
+        }
+
+        .ChooseUsContainerHeader {
+            display: flex;
+            width: 30%;
+            padding: 24px 41px 92.88px 0px;
+            flex-direction: column;
+            align-items: flex-start;
+            flex-shrink: 0;
+            border-right: 1px solid rgba(19, 196, 163, 0.50);
+
+
+            @media (max-width:1110px) {
+                width: 100%;
+                padding: 10px;
+            }
+
+
+            p {
+                color: #000;
+                font-family: Manrope;
+                font-size: 18px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 25.2px;
+                /* 140% */
+                letter-spacing: -0.36px;
+            }
+
+            button {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                color: white;
+                margin-top: 20px;
+                background: var(--Secondary, #329683);
+                padding-left: 50px;
+                padding-right: 50px;
+                padding-top: 15px;
+                padding-bottom: 15px;
+                border-radius: 40px;
+                outline: none;
+                border: none;
+            }
+        }
+
+        .ChooseUsContainerLast {
+            display: grid;
+            width: 70%;
+            height: auto;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+            padding-top: 10px;
+            padding-right: 10px;
+
+            @media (max-width:1110px) {
+                grid-template-columns: repeat(2, 1fr);
+                width: 100%;
+                padding-right: 0px;
+            }
+
+           
+
+            .ChooseUsContainerLastImage {
+                width: 300px;
+                height: 400px;
+                grid-row: span 2;
+                padding: 5px;
+
+                @media (max-width:1110px) {
+                        display: none;
+                }
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+
+            .ChooseUsContainerLastBanner {
+                width: 130px;
+                height: auto;
+                max-height: 180px;
+                border-top: 2px solid #329683;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: space-between;
+                @media (max-width:1110px) {
+                    height: 300px;            
+                }
+
+                .ChooseUsContainerLastBannerHeader {
+                    width: 100%;
+                    padding-top: 10px;
+                    padding-bottom: 10px;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+
+                    h3 {
+                        color: var(--out-of-names, #0B0B0B);
+                        font-family: Satoshi;
+                        font-size: 40px;
+                        font-style: normal;
+                        font-weight: 700;
+                        line-height: 69px;
+                        /* 100% */
+                        letter-spacing: -4.14px;
+
+                        @media (max-width:1110px) {
+                            h1 {
+                                font-size: 25px;
+                            }
+                        }
+                    }
+                    .ChooseUsContainerLastBannerIcon {
+                        width: 30px;
+                        height: 30px;
+                        border: 1px solid #000;
+                        border-radius: 100%;
+                    }
+                }
+                p {
+                    display: flex;
+                    justify-content: start;
+                    align-items: center;
+                }
+              
+            }
+
+        }
+    }
+}

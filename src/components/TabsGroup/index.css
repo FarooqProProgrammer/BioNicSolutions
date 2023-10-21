@@ -3,7 +3,13 @@
 }
 .TabsGroup .TabHeading {
   width: 100%;
-  @apply py-3 flex justify-start items-start;
+  @apply py-3 flex justify-between items-start;
+}
+@media (max-width: 1000px) {
+  .TabsGroup .TabHeading {
+    flex-direction: column;
+    width: 100%;
+  }
 }
 .TabsGroup .TabHeading h3 {
   color: var(--Secondary, #329683);
@@ -15,6 +21,17 @@
   letter-spacing: -5.46px;
   text-transform: uppercase;
   padding-left: 10px;
+}
+.TabsGroup .TabHeading button {
+  display: flex;
+  min-height: 56px;
+  padding: 0px 40px;
+  justify-content: center;
+  align-items: center;
+  gap: 23.06px;
+  border-radius: 40px;
+  background: var(--Secondary, #329683);
+  color: white;
 }
 .TabsGroup .TabGrid {
   width: 100%;
@@ -58,7 +75,7 @@
 }
 .TabsGroup .TabGrid .TabsGridComponent .TabsGridComponentCards .TabsGridComponentCard {
   width: 100%;
-  background-color: #F0F0F0;
+  background-color: #f0f0f0;
   @apply rounded-md  h-[90px] py-2 flex justify-between items-center px-5;
 }
 @media (max-width: 900px) {

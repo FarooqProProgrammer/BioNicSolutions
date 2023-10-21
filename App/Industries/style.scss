@@ -1,0 +1,96 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.industriesComponent {
+    display: flex;
+    width: 100%;
+    padding: 147px 0px 153px 130px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    background: radial-gradient(100.07% 100.05% at 45.33% 100.04%, #08372F 0%, #000 100%);
+
+    h3 {
+        color: #FFF;
+        font-family: Satoshi;
+        font-size: 40px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 91px;
+        /* 119.048% */
+        letter-spacing: -5.46px;
+        text-transform: uppercase;
+    }
+
+    .industriesComponentStack {
+        width: 100%;
+        padding: 10px;
+        display: flex;
+
+        .industriesComponentStackleft {
+            flex: 0.3;
+            display: flex;
+            flex-direction: column;
+            justify-content: start;
+            align-items: start;
+            gap: 10px;
+
+            p {
+                width: 314px;
+                max-width: 318.36px;
+                color: #FFF;
+                font-family: Manrope;
+                font-size: 15.12px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 19.2px;
+                /* 126.984% */
+                letter-spacing: -0.36px;
+            }
+        }
+
+        .industriesComponentStackRight {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            height: auto;
+
+            .industriesComponentStackRightCard {
+                width: 300px;
+                height: 400px;
+
+                .industriesComponentStackRightCardImage {
+                    width: 100%;
+                    height: 200px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: end;
+                    padding-bottom: 10px;
+                    background-image: url('https://images.unsplash.com/photo-1697462247834-7d55761daea3?auto=format&fit=crop&q=60&w=500&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwzfHx8ZW58MHx8fHx8');
+
+                    p {
+                        color: #FFF;
+                        font-family: Satoshi;
+                        font-size: 30.88px;
+                        font-style: normal;
+                        font-weight: 700;
+                        line-height: 38.4px;
+                        /* 124.352% */
+                        letter-spacing: -0.64px;
+                        text-transform: uppercase;
+                    }
+                }
+                .industriesComponentStackRightCardBanner {
+                    width: 100%;
+                    height: 200px;
+                    background-color: white;
+                }
+
+            }
+        }
+    }
+}

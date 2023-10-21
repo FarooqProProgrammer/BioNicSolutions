@@ -1,0 +1,125 @@
+.Client {
+    padding-left: 20px;
+    display: flex;
+    flex-direction: column;
+    h3 {
+        color: var(--Secondary, #329683);
+        font-family: Satoshi;
+        font-size: 40px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 91px;
+
+        letter-spacing: 1px;
+        text-transform: uppercase;
+
+        @media (max-width: 990px) {
+            font-size: 30px;
+        }
+    }
+    .ClientList {
+        display: flex;
+        width: 100%;
+        padding: 1px 0.05px 0px 0px;
+        align-items: flex-start;
+        align-content: flex-start;
+        flex-wrap: wrap;
+        gap: 10px;
+        border-top: 1px solid #329683;
+
+        .CLientListOne {
+            display: flex;
+            flex: 1;
+            padding: 24px 25px 2.39px 0px;
+            align-items: flex-start;
+            flex-shrink: 0;
+            border-right: 1px solid #329683;
+            @media (max-width: 990px) {
+                padding: 24px 0px 2.39px 0px;
+            }
+
+            .ClientListLeft {
+                padding-left: 10px;
+                padding-top: 20px;
+
+                @media (max-width: 990px) {
+                    padding-left: 0px;
+                }
+                h4 {
+                    color: #6a797e;
+                    font-family: Roboto;
+                    font-size: 14px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: normal;
+                    letter-spacing: 1px;
+                    text-transform: uppercase;
+                }
+            }
+            .CLientListRight {
+                display: flex;
+                padding: 0px 116.98px 0px 24px;
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 4px;
+                flex: 1 0 0;
+
+                h3 {
+                    color: #000;
+
+                    font-family: Manrope;
+                    font-size: 15px;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: 21px;
+                    font-weight: 800;
+                    @media (max-width: 900px) {
+                        max-width: 95%;
+                    }
+                }
+                p {
+                    color: #7d8387;
+                    font-family: Manrope;
+                    font-size: 11px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 15.4px; /* 140% */
+                }
+            }
+        }
+    }
+
+    .CLientContainer {
+        width: 100%;
+        padding: 20px;
+        display: flex;
+        background: radial-gradient(100.09% 100.09% at 50% 100.09%, #0c4238 0%, #010113 100%);
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 4px;
+
+        @media (max-width:1000px) {
+            flex-direction: column;
+            width: 100%;
+        }
+        .ClientContainerleft {
+            flex: 1;
+            .ClientContainerImg  {
+                padding: 50px 50px 80px 50px;
+                img {
+                    width: 100px;
+                    height: 100px;
+                    border-radius: 100%;
+                }
+            }
+        }
+        .ClientContainerRight {
+            flex: 1;
+            display: flex;
+            gap: 10px;
+            p {
+                color: white;
+            }
+        }
+    }
+}

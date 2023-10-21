@@ -1,0 +1,205 @@
+.Approach {
+  display: flex;
+  width: 100%;
+  padding: 40px;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  background: var(--gr, radial-gradient(99.97% 99.97% at 50% 0.03%, #0C4238 0%, #010113 100%));
+}
+.Approach .ApproachTop {
+  display: flex;
+  width: 100%;
+  padding-right: 0px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 20px 0px 0px;
+  flex-wrap: wrap;
+}
+.Approach .ApproachTop .ApproachTopLeft {
+  display: flex;
+  max-width: 1120.001px;
+  padding: 24px 0px 10.97px 0px;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.Approach .ApproachTop .ApproachTopLeft h3 {
+  color: #FFF;
+  font-family: Satoshi;
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 91px;
+  /* 100% */
+  letter-spacing: -5.46px;
+  text-transform: uppercase;
+}
+.Approach .ApproachTop .ApproachTopLeft button {
+  display: flex;
+  min-height: 56px;
+  padding: 0px 40px;
+  justify-content: center;
+  align-items: center;
+  gap: 23.36px;
+  border-radius: 40px;
+  background: #C5D86D;
+}
+.Approach .ApproachTop .ApproachRight {
+  display: flex;
+  max-width: 559.999px;
+  padding-top: 24px;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-right: 40px;
+}
+.Approach .ApproachTop .ApproachRight p {
+  color: #F1F1F1;
+  font-family: Manrope;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 33.6px;
+  letter-spacing: -0.48px;
+}
+@media (max-width: 1110px) {
+  .Approach .ApproachTop .ApproachRight {
+    max-width: 100%;
+    padding-right: 5px;
+    padding-bottom: 30px;
+  }
+}
+.Approach .ApproachMiddle {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding-top: 1px;
+  border-top: 1px solid rgba(125, 131, 135, 0.5);
+}
+.Approach .ApproachMiddle .ApproachFirst {
+  display: flex;
+  width: 420px;
+  padding: 52px 49px 89px 0px;
+  flex-direction: column;
+  align-items: flex-start;
+  flex-shrink: 0;
+  border-right: 1px solid rgba(125, 131, 135, 0.5);
+}
+.Approach .ApproachMiddle .ApproachFirst h3 {
+  color: #E0EC5B;
+  font-family: Manrope;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 21px;
+  letter-spacing: -0.15px;
+}
+.Approach .ApproachMiddle .ApproachFirst .ApproachList {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  margin-top: 20px;
+  gap: 10px;
+}
+.Approach .ApproachMiddle .ApproachFirst .ApproachList span {
+  color: #F1F1F1;
+  font-family: Manrope;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 21px;
+  /* 140% */
+  letter-spacing: -0.15px;
+}
+@media (max-width: 1110px) {
+  .Approach .ApproachMiddle .ApproachFirst {
+    width: 100%;
+    padding: 10px;
+    border-bottom: 1px solid rgba(125, 131, 135, 0.5);
+    border-right: 1px solid none;
+  }
+  .Approach .ApproachMiddle .ApproachFirst .ApproachList {
+    flex-direction: row;
+    max-width: 100%;
+    overflow-x: auto;
+  }
+}
+.Approach .ApproachMiddle .ApproachMiddleBottom {
+  width: 100%;
+  padding: 20px;
+}
+@media (max-width: 1110px) {
+  .Approach .ApproachMiddle .ApproachMiddleBottom svg {
+    width: 80%;
+    height: 80%;
+  }
+}
+.Approach .ApproachMiddle .ApproachLast {
+  display: flex;
+  max-width: 100%;
+  padding: 16px 0px 51.41px 24px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+}
+.Approach .ApproachMiddle .ApproachLast .ApproachLastHeader {
+  width: 100%;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 10px;
+}
+.Approach .ApproachMiddle .ApproachLast .ApproachLastHeader h4 {
+  color: #E0EC5B;
+  font-family: Manrope;
+  font-size: 27px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 32.4px;
+  letter-spacing: -0.54px;
+}
+.Approach .ApproachMiddle .ApproachLast .ApproachLastHeader p {
+  color: #FFF;
+  font-family: Satoshi;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 57.6px;
+  /* 120% */
+  letter-spacing: -0.96px;
+}
+.Approach .ApproachMiddle .ApproachLast .ApproachLastHero {
+  display: flex;
+  padding-right: 0px;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.Approach .ApproachMiddle .ApproachLast .ApproachLastHero p {
+  color: #FFF;
+  font-family: Manrope;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 21px;
+}
+.Approach .ApproachMiddle .ApproachLast .ApproachListStyle {
+  display: flex;
+  padding-right: 0px;
+  justify-content: flex-end;
+  align-items: flex-start;
+  gap: 24px;
+}
+.Approach .ApproachMiddle .ApproachLast .ApproachListStyle p {
+  color: #FFF;
+  font-family: Manrope;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px;
+  /* 100% */
+  letter-spacing: -0.36px;
+}
+@media (max-width: 1110px) {
+  .Approach .ApproachMiddle {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}/*# sourceMappingURL=index.css.map */

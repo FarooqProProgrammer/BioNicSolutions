@@ -1,16 +1,15 @@
 import React, { useEffect } from 'react'
 import "./index.css"
+import ComponentHeading from '../../common/ComponentHeading'
 
-export default function TabsGroup({ FrontEnd, title }) {
+export default function TabsGroup({ FrontEnd, title,isButton,isTitle,isButtontext }) {
   useEffect(() => {
     console.log(FrontEnd)
   }, [])
 
   return (
     <div className='TabsGroup'>
-      <div className='TabHeading'>
-        <h3>Web Platform</h3>
-      </div>
+      <ComponentHeading title={isTitle ? isTitle :'Web Platform'} isButton button={isButtontext?isButtontext:' Discover Me'} />
       <div className='TabGrid'>
         <div className='TabGridParagraph'>
           <p>

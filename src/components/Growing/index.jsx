@@ -1,6 +1,6 @@
 import React from 'react'
 import "./index.css"
-import {BiSolidQuoteRight} from "react-icons/bi"
+import { BiSolidQuoteRight } from "react-icons/bi"
 
 export default function Growing() {
     return (
@@ -33,11 +33,17 @@ export default function Growing() {
                     </div>
                 </div>
                 <div className="BusinessFormPolicies">
-                    <p>
-                        We will add your info to our CRM for contacting you regarding your
-                        request. For more info please consult our privacy policy.
-                    </p>
-                    <button>Send Message</button>
+                    <div className='BusinessFormPoliciesParagraph'>
+                        <input 
+                            type='checkbox'
+                        />
+                        <p>
+                            We will add your info to our CRM for contacting you regarding your
+                            request. For more info please consult our privacy policy.
+                        </p>
+                    </div>
+
+                    <button className='px-5 py-2'>Send Message</button>
                 </div>
             </div>
         </div>

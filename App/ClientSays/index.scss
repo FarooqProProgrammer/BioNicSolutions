@@ -1,0 +1,60 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.ClientSays {
+    padding: 30px;
+
+    h2 {
+        color: var(--Secondary, #329683);
+        font-family: Satoshi;
+        font-size: 60px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 91px;
+        /* 100% */
+        letter-spacing: -5.46px;
+        text-transform: uppercase;
+    }
+
+    .ClientSaysList {
+        display: flex;
+        width: 100%;
+        padding: 1px 0.05px 0px 0px;
+        align-items: flex-start;
+        align-content: flex-start;
+        flex-wrap: wrap;
+        border-top: 1px solid rgba(19, 196, 163, 0.50);
+
+        .topRated {
+            display: flex;
+            flex: 1;
+            padding: 24px 25px 2.39px 0px;
+            border-right: 1px solid rgba(19, 196, 163, 0.50);
+
+            align-items: flex-start;
+            flex-shrink: 0;
+
+            .topRatedLeft {
+                flex: 1;
+
+                h5 {}
+            }
+            .topRatedRight {
+                display: flex;
+                flex-direction: column;
+                justify-content: start;
+                align-items: start;
+                gap: 10px;
+            }
+
+        }
+    }
+
+    .clientAbout{
+        
+    }
+
+}

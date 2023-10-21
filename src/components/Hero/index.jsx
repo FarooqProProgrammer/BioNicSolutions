@@ -7,11 +7,11 @@ import UpperArrow from "../../assets/UpperArrow.svg"
 import { useMediaQuery } from 'react-responsive'
 
 
-export default function Hero() {
+export default function Hero({img}) {
     const isTabletOrMobile = useMediaQuery({ query: '(max-width: 900px)' })
 
     return (
-        <div className='w-full h-[87vh] pb-[140px] bg-black relative flex flex-col justify-end items-center'>
+        <div style={{backgroundImage:img && `url(${img})`,backgroundRepeat:'no-repeat',backgroundPosition:'center',backgroundSize:'cover'}} className='w-full h-[90vh] pb-[140px] HeroImg bg-black relative flex flex-col justify-end items-center'>
 
                 {
                     !isTabletOrMobile &&<div className='absolute flex justify-center items-center gap-3 left-4 top-4'>

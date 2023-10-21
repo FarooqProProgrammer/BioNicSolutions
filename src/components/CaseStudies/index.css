@@ -1,0 +1,36 @@
+.Case {
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #329683;
+}
+@media (max-width: 1110px) {
+  .Case {
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+  }
+}
+
+.CaseStudyText {
+  color: var(--Secondary, #329683);
+  font-family: Satoshi;
+  font-size: 60px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 91px; /* 100% */
+  letter-spacing: -5.46px;
+  text-transform: uppercase;
+}
+
+.CaseStudyButton {
+  display: flex;
+  min-height: 56px;
+  padding: 0px 40px;
+  justify-content: center;
+  align-items: center;
+  gap: 23.66px;
+  border-radius: 40px;
+  background: var(--Secondary, #329683);
+  color: white;
+}/*# sourceMappingURL=index.css.map */

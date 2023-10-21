@@ -1,0 +1,34 @@
+.TeemTitle {
+    color: #CBCBCB;
+    font-family: Satoshi;
+    font-size: 150px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @media (max-width:1110px) {
+        color: #CBCBCB;
+        font-family: Satoshi;
+        font-size: 93px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 200px;
+        max-width: 100%;
+        overflow-x: auto;
+
+        /* 215.054% */
+        .Second {
+            display: none;
+        }
+
+        span {
+            display: none;
+        }
+    }
+
+    /* 100% */
+}
+

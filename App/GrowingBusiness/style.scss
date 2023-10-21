@@ -1,0 +1,135 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.Business {
+    display: flex;
+    width: 100%;
+    padding: 104px 120px 0px 50px;
+    background: radial-gradient(99.94% 99.94% at 50% 99.96%, #0C4238 0%, #010113 100%);
+
+    @media (max-width:1110px) {
+        flex-direction: column;
+        width: 100%;
+        padding: 104px 40px 0px 50px;
+    }
+
+    .BusinessLeft {
+        flex: 1;
+        height: auto;
+        padding: 20px;
+
+        p {
+            color: white;
+
+
+        }
+
+    }
+
+    .BusinessRight {
+        flex: 1;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        gap: 10px;
+        padding-bottom: 30px;
+
+        h2 {
+            max-width: 756px;
+            color: #FFF;
+            font-family: Satoshi;
+            font-size: 69px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 69px;
+            /* 100% */
+            letter-spacing: -4.14px;
+
+            @media (max-width:1110px) {
+                font-size: 40px;
+            }
+        }
+
+        .BusinessFormGrid {
+            width: 100%;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            padding-bottom: 10px;
+            gap: 20px;
+
+            @media (max-width:1110px) {
+                grid-template-columns: repeat(1, 1fr);
+            }
+
+            .BusinessFormGridInput {
+                width: 100%;
+                height: 56px;
+                flex-shrink: 0;
+                border-radius: 10px;
+                border-bottom: 1px solid #E0EC5B;
+
+                &:last-child {
+                    grid-column: span 2;
+                }
+
+                input {
+                    width: 100%;
+                    height: 100%;
+                    padding-left: 20px;
+                    background: transparent;
+                    border-radius: 10px;
+                    outline: none;
+                }
+            }
+
+            .col-span-2 {
+                column-span: 2;
+            }
+        }
+
+        .BusinessFormPolicies {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            @media (max-width:1110px) {
+                flex-direction: column;
+                width: 100%;
+                justify-content: start;
+                align-items: start;
+                gap: 10px;
+            }
+
+            p {
+                color: #7D8387;
+                font-family: Manrope;
+                font-size: 11px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 15.4px;
+                color: var(--Accent, #E0EC5B);
+                font-family: Manrope;
+                font-size: 11px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 15.4px;
+                /* 140% */
+            }
+
+            button {
+                display: flex;
+                min-height: 56px;
+                padding: 0px 39.5px 0px 39.7px;
+                justify-content: center;
+                align-items: center;
+                border-radius: 40px;
+background: var(--Accent, #E0EC5B);
+            }
+        }
+
+    }
+}

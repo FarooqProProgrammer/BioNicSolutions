@@ -77,6 +77,12 @@
   -moz-column-span: 2;
        column-span: 2;
 }
+@media (max-width: 1110px) {
+  .Business .BusinessRight .BusinessFormGrid .col-span-2 {
+    -moz-column-span: 1;
+         column-span: 1;
+  }
+}
 .Business .BusinessRight .BusinessFormPolicies {
   width: 100%;
   display: flex;
@@ -92,27 +98,34 @@
     gap: 10px;
   }
 }
-.Business .BusinessRight .BusinessFormPolicies p {
+.Business .BusinessRight .BusinessFormPolicies .BusinessFormPoliciesParagraph {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 10px;
+}
+.Business .BusinessRight .BusinessFormPolicies .BusinessFormPoliciesParagraph input {
+  background-color: transparent;
+}
+.Business .BusinessRight .BusinessFormPolicies .BusinessFormPoliciesParagraph p {
   color: #7D8387;
   font-family: Manrope;
   font-size: 11px;
   font-style: normal;
   font-weight: 400;
   line-height: 15.4px;
-  color: var(--Accent, #E0EC5B);
-  font-family: Manrope;
-  font-size: 11px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 15.4px;
-  /* 140% */
+  max-width: 60%;
+  color: white;
+}
+@media (max-width: 1000px) {
+  .Business .BusinessRight .BusinessFormPolicies .BusinessFormPoliciesParagraph p {
+    max-width: 95%;
+  }
 }
 .Business .BusinessRight .BusinessFormPolicies button {
   display: flex;
-  min-height: 150px;
-  @apply px-5 text-sm;
+  @apply py-2 rounded-md px-10 text-sm text-[#999];
   justify-content: center;
   align-items: center;
-  border-radius: 40px;
   background: var(--Accent, #E0EC5B);
 }/*# sourceMappingURL=index.css.map */

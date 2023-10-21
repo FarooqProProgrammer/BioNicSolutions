@@ -81,6 +81,10 @@
 
             .col-span-2 {
                 column-span: 2;
+                
+            @media (max-width:1110px) {
+                column-span: 1;
+            }
             }
         }
 
@@ -97,30 +101,39 @@
                 align-items: start;
                 gap: 10px;
             }
+            .BusinessFormPoliciesParagraph{
+                display: flex;
+                justify-content: start;
+                align-items: center;
+                gap: 10px;
 
-            p {
+                input {
+                    background-color: transparent;
+                }
+                  p {
                 color: #7D8387;
                 font-family: Manrope;
                 font-size: 11px;
                 font-style: normal;
                 font-weight: 400;
                 line-height: 15.4px;
-                color: var(--Accent, #E0EC5B);
-                font-family: Manrope;
-                font-size: 11px;
-                font-style: normal;
-                font-weight: 400;
-                line-height: 15.4px;
-                /* 140% */
+               max-width: 60%;
+               color: white;
+               @media (max-width:1000px) {
+                max-width: 95%;
+               }
             }
+            }
+          
 
             button {
                 display: flex;
-                min-height: 150px;
-                @apply px-5 text-sm;
+                
+                @apply py-2 rounded-md px-10 text-sm text-[#999];
                 justify-content: center;
                 align-items: center;
-                border-radius: 40px;
+                
+                
                 background: var(--Accent, #E0EC5B);
             }
         }
