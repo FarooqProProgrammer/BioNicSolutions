@@ -1,0 +1,24 @@
+.TabsGroup {
+    @apply w-full flex flex-col gap-3;
+    .TabHeading {
+        width: 100%;
+        @apply py-3 flex  justify-start items-start;
+
+        h3 {
+            color: var(--Secondary, #329683);
+            font-family: Manrope;
+            font-size: 40px;
+            font-style: normal;
+            font-weight: 800;
+            line-height: 91px;
+            letter-spacing: -5.46px;
+            text-transform: uppercase;
+            padding-left: 10px;
+        }
+    }
+
+    .TabsGridComponent  {
+        width: 100%;
+        @apply py-3 px-4 flex flex-col justify-start items-start gap-4;
+    }
+}
