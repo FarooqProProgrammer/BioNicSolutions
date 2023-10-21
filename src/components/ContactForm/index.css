@@ -1,0 +1,31 @@
+.ContactForm {
+  width: 100%;
+  padding-top: 1px;
+  border-top: 1px solid rgba(19, 196, 163, 0.5);
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+.ContactForm .ContactLeftSide {
+  display: flex;
+  width: 420px;
+  padding: 64px 41px 400px 10px;
+  flex-direction: column;
+  align-items: flex-start;
+  flex-shrink: 0;
+  border-right: 1px solid rgba(19, 196, 163, 0.5);
+}
+.ContactForm .ContactLeftSide .ContactLeftSideList1 {
+  max-width: 359px;
+  color: #000;
+  font-family: Manrope;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 21px; /* 140% */
+  letter-spacing: -0.15px;
+}
+@media (max-width: 960px) {
+  .ContactForm {
+    flex-direction: column;
+  }
+}/*# sourceMappingURL=index.css.map */

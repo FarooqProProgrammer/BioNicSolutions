@@ -1,0 +1,28 @@
+.HeroText {
+    font-size: 50px;
+}
+.HeroParagraphy {
+    font-size: 19px;
+    
+}
+.discussImage {
+    right: 240px;
+}
+
+
+
+@media (max-width:900px) {
+    .HeroText {
+        font-size: 40px;
+    }
+}
+
+@media (max-width:700px) {
+    .discussImage {
+        right: 5px;
+        bottom: -60px;
+    }
+    .HeroParagraphy{
+        font-size: 15px;
+    }
+}

@@ -1,0 +1,13 @@
+.MobileHeader{
+    width: 100%;
+    height: 88vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.IconBox {
+    width: 100%;
+    @apply py-4 flex justify-start items-center gap-4 px-4;
+}
