@@ -1,8 +1,9 @@
 .TabsGroup {
     @apply w-full flex flex-col gap-3;
+
     .TabHeading {
         width: 100%;
-        @apply py-3 flex  justify-start items-start;
+        @apply py-3 flex justify-start items-start;
 
         h3 {
             color: var(--Secondary, #329683);
@@ -17,8 +18,66 @@
         }
     }
 
-    .TabsGridComponent  {
+
+
+    .TabGrid {
         width: 100%;
-        @apply py-3 px-4 flex flex-col justify-start items-start gap-4;
+        display: flex;
+        @apply border-t border-teal-600;
+        gap: 50px;
+
+        @media (max-width:1110px) {
+            flex-direction: column;
+            width: 100%;
+        }
+        .TabGridParagraph {
+            width: 100%;
+            @apply px-4 pt-[50px];
+            flex: 0.3;
+            @apply border-r border-teal-600;
+        }
+        .TabsGridComponent {
+            width: 100%;
+            @apply py-3 px-4 flex flex-col justify-start items-start gap-4;
+            flex: 1;
+            .TabsGridComponentHeading {
+                @apply w-full py-2 px-2;
+    
+                h2 {
+                    color: #000;
+                    font-family: Satoshi;
+                    font-size: 48px;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: 57.6px;
+                    /* 120% */
+                    letter-spacing: -0.96px;
+                }
+    
+            }
+    
+            .TabsGridComponentCards {
+                width: 100%;
+                @apply grid grid-cols-3 place-items-center gap-3;
+    
+                .TabsGridComponentCard {
+                    width: 100%;
+                  
+                    background-color: #F0F0F0;
+                    @apply rounded-md  h-[90px] py-2 flex justify-between items-center px-5;
+    
+                    @media (max-width:900px) {
+                        @apply flex-col w-full;
+                    }
+    
+                    h3 {
+                        font-size: 15px;
+                    }
+                }
+            }
+    
+        }
     }
+
+    
 }
