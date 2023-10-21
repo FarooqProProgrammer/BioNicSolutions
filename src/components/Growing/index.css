@@ -1,0 +1,118 @@
+.Business {
+  display: flex;
+  width: 100%;
+  padding: 104px 120px 0px 50px;
+  background: radial-gradient(99.94% 99.94% at 50% 99.96%, #0C4238 0%, #010113 100%);
+}
+@media (max-width: 1110px) {
+  .Business {
+    flex-direction: column;
+    width: 100%;
+    padding: 104px 40px 0px 50px;
+  }
+}
+.Business .BusinessLeft {
+  flex: 1;
+  height: auto;
+  padding: 20px;
+}
+.Business .BusinessLeft p {
+  color: white;
+}
+.Business .BusinessRight {
+  flex: 1;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  padding-bottom: 30px;
+}
+.Business .BusinessRight h2 {
+  max-width: 756px;
+  color: #FFF;
+  font-family: Satoshi;
+  font-size: 69px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 69px;
+  /* 100% */
+  letter-spacing: -4.14px;
+}
+@media (max-width: 1110px) {
+  .Business .BusinessRight h2 {
+    font-size: 40px;
+  }
+}
+.Business .BusinessRight .BusinessFormGrid {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding-bottom: 10px;
+  gap: 20px;
+}
+@media (max-width: 1110px) {
+  .Business .BusinessRight .BusinessFormGrid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+.Business .BusinessRight .BusinessFormGrid .BusinessFormGridInput {
+  width: 100%;
+  height: 56px;
+  flex-shrink: 0;
+  border-radius: 10px;
+  border-bottom: 1px solid #E0EC5B;
+}
+.Business .BusinessRight .BusinessFormGrid .BusinessFormGridInput:last-child {
+  grid-column: span 2;
+}
+.Business .BusinessRight .BusinessFormGrid .BusinessFormGridInput input {
+  width: 100%;
+  height: 100%;
+  padding-left: 20px;
+  background: transparent;
+  border-radius: 10px;
+  outline: none;
+}
+.Business .BusinessRight .BusinessFormGrid .col-span-2 {
+  -moz-column-span: 2;
+       column-span: 2;
+}
+.Business .BusinessRight .BusinessFormPolicies {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+@media (max-width: 1110px) {
+  .Business .BusinessRight .BusinessFormPolicies {
+    flex-direction: column;
+    width: 100%;
+    justify-content: start;
+    align-items: start;
+    gap: 10px;
+  }
+}
+.Business .BusinessRight .BusinessFormPolicies p {
+  color: #7D8387;
+  font-family: Manrope;
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 15.4px;
+  color: var(--Accent, #E0EC5B);
+  font-family: Manrope;
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 15.4px;
+  /* 140% */
+}
+.Business .BusinessRight .BusinessFormPolicies button {
+  display: flex;
+  min-height: 150px;
+  @apply px-5 text-sm;
+  justify-content: center;
+  align-items: center;
+  border-radius: 40px;
+  background: var(--Accent, #E0EC5B);
+}/*# sourceMappingURL=index.css.map */

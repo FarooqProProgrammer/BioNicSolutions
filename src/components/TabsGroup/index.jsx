@@ -4,7 +4,7 @@ import "./index.css"
 export default function TabsGroup({ FrontEnd, title }) {
   useEffect(() => {
     console.log(FrontEnd)
-  }, [FrontEnd])
+  }, [])
 
   return (
     <div className='TabsGroup'>
@@ -19,26 +19,35 @@ export default function TabsGroup({ FrontEnd, title }) {
         </div>
         <div className='TabsGridComponent'>
 
-          <div className="TabsGridComponentHeading">
-            <h2>{title}</h2>
+          {
+            FrontEnd.map((item) => {
+              return (
+                <>
+                  <div className="TabsGridComponentHeading">
+                    <h2>{item.FrontEndTitle}</h2>
 
-          </div>
-          <div className='TabsGridComponentCards'>
-            {
-              FrontEnd?.map((item) => {
-                return (
-                  <div className='TabsGridComponentCard'>
-                    <item.icon />
-
-                    <h3>{item.text}</h3>
                   </div>
-                )
-              })
-            }
+                  <div className='TabsGridComponentCards'>
+                    {
+                      item.Lists?.map((item) => {
+                        return (
+                          <div className='TabsGridComponentCard'>
+                            <item.icon />
+
+                            <h3>{item.text}</h3>
+                          </div>
+                        )
+                      })
+                    }
 
 
 
-          </div>
+                  </div>
+                </>
+              )
+            })
+          }
+
 
 
 
