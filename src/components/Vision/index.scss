@@ -14,16 +14,19 @@
         font-size: 30px;
         font-style: normal;
         font-weight: 800;
-        line-height: 69px; /* 100% */
+        line-height: 69px;
+        /* 100% */
         letter-spacing: 2px;
     }
+
     p {
         color: #000;
         font-family: Manrope;
         font-size: 17px;
         font-style: normal;
         font-weight: 400;
-        line-height: 33.6px; /* 140% */
+        line-height: 33.6px;
+        /* 140% */
         letter-spacing: -0.48px;
     }
 
@@ -37,7 +40,7 @@
             width: 100%;
         }
 
-        .VisionsHeading{
+        .VisionsHeading {
             width: 30%;
             height: 500px;
             display: flex;
@@ -52,47 +55,80 @@
                 width: 100%;
             }
         }
+
         .VisionComponentGrid {
             width: 70%;
-            height: auto;
-            padding: 5px;
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            border-left: 1px solid #13c4a3;
-            gap: 4px;
 
-                @media (max-width:1000px) {
-                    grid-template-columns: repeat(1,1fr);
-                    width: 100%;
-                }
-
-
-            .VisionComponentGridItem {
-                @apply flex justify-start gap-4 items-center px-2;
-
-                @media (max-width:1000px) {
-                        margin-bottom: 10px;
-                }
-
+            .VisionComponentGridHeading {
+                padding-left: 20px;
                 h3 {
-                    color: #13c4a3;
+                    color: #000;
                     font-family: Manrope;
-                    font-size: 18px;
+                    font-size: 40px;
                     font-style: normal;
-                    font-weight: 700;
-                    line-height: 25.2px; /* 140% */
-                    letter-spacing: -0.36px;
+                    font-weight: 800;
+                    line-height: 69px;
+                    /* 100% */
+                    letter-spacing: -4.14px;
                 }
 
                 p {
                     color: #000;
                     font-family: Manrope;
-                    font-size: 13px;
+                    font-size: 18px;
                     font-style: normal;
                     font-weight: 400;
-                    line-height: 18.2px; /* 140% */
+                    line-height: 33.6px;
+                    /* 140% */
+                    letter-spacing: -0.48px;
                 }
             }
+
+
+            .VisionComponentGridContainer {
+                width: 100%;
+                height: 200px;
+                padding: 5px;
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                border-left: 1px solid #13c4a3;
+                gap: 4px;
+
+                @media (max-width:1000px) {
+                    grid-template-columns: repeat(1, 1fr);
+                    width: 100%;
+                }
+
+                .VisionComponentGridItem {
+                    @apply flex justify-start gap-4 items-center px-2;
+
+                    @media (max-width:1000px) {
+                        margin-bottom: 10px;
+                    }
+
+                    h3 {
+                        color: #13c4a3;
+                        font-family: Manrope;
+                        font-size: 18px;
+                        font-style: normal;
+                        font-weight: 700;
+                        line-height: 25.2px;
+                        /* 140% */
+                        letter-spacing: -0.36px;
+                    }
+
+                    p {
+                        color: #000;
+                        font-family: Manrope;
+                        font-size: 13px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: 18.2px;
+                        /* 140% */
+                    }
+                }
+            }
+
         }
     }
 }

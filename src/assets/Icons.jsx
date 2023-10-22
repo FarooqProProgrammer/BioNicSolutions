@@ -764,3 +764,13 @@ export const NPMICON = () => {
 
     )
 }
+
+
+export const UppArrowIcon = () => {
+    return (
+        <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M16.6599 16.2365V1.30286V0.769531H16.1266H1.19324L1.19324 1.8362H14.8396L0.816406 15.8593L1.57065 16.6136L15.5932 2.591V16.2365H16.6599Z" fill="white" />
+        </svg>
+
+    )
+}

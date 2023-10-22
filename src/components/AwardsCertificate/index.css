@@ -1,0 +1,12 @@
+.AwardsContainer {
+  display: flex;
+}
+@media (max-width: 1000px) {
+  .AwardsContainer {
+    flex-direction: column;
+  }
+}
+.AwardsContainer .AwardsContainerHeading {
+  flex: 1;
+  padding: 0px 0px 0px 10px;
+}/*# sourceMappingURL=index.css.map */

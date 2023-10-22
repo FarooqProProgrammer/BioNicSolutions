@@ -14,7 +14,8 @@
   font-size: 30px;
   font-style: normal;
   font-weight: 800;
-  line-height: 69px; /* 100% */
+  line-height: 69px;
+  /* 100% */
   letter-spacing: 2px;
 }
 .VisionComponent p {
@@ -23,7 +24,8 @@
   font-size: 17px;
   font-style: normal;
   font-weight: 400;
-  line-height: 33.6px; /* 140% */
+  line-height: 33.6px;
+  /* 140% */
   letter-spacing: -0.48px;
 }
 .VisionComponent .Visions {
@@ -55,7 +57,33 @@
 }
 .VisionComponent .Visions .VisionComponentGrid {
   width: 70%;
-  height: auto;
+}
+.VisionComponent .Visions .VisionComponentGrid .VisionComponentGridHeading {
+  padding-left: 20px;
+}
+.VisionComponent .Visions .VisionComponentGrid .VisionComponentGridHeading h3 {
+  color: #000;
+  font-family: Manrope;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 69px;
+  /* 100% */
+  letter-spacing: -4.14px;
+}
+.VisionComponent .Visions .VisionComponentGrid .VisionComponentGridHeading p {
+  color: #000;
+  font-family: Manrope;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 33.6px;
+  /* 140% */
+  letter-spacing: -0.48px;
+}
+.VisionComponent .Visions .VisionComponentGrid .VisionComponentGridContainer {
+  width: 100%;
+  height: 200px;
   padding: 5px;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -63,33 +91,35 @@
   gap: 4px;
 }
 @media (max-width: 1000px) {
-  .VisionComponent .Visions .VisionComponentGrid {
+  .VisionComponent .Visions .VisionComponentGrid .VisionComponentGridContainer {
     grid-template-columns: repeat(1, 1fr);
     width: 100%;
   }
 }
-.VisionComponent .Visions .VisionComponentGrid .VisionComponentGridItem {
+.VisionComponent .Visions .VisionComponentGrid .VisionComponentGridContainer .VisionComponentGridItem {
   @apply flex justify-start gap-4 items-center px-2;
 }
 @media (max-width: 1000px) {
-  .VisionComponent .Visions .VisionComponentGrid .VisionComponentGridItem {
+  .VisionComponent .Visions .VisionComponentGrid .VisionComponentGridContainer .VisionComponentGridItem {
     margin-bottom: 10px;
   }
 }
-.VisionComponent .Visions .VisionComponentGrid .VisionComponentGridItem h3 {
+.VisionComponent .Visions .VisionComponentGrid .VisionComponentGridContainer .VisionComponentGridItem h3 {
   color: #13c4a3;
   font-family: Manrope;
   font-size: 18px;
   font-style: normal;
   font-weight: 700;
-  line-height: 25.2px; /* 140% */
+  line-height: 25.2px;
+  /* 140% */
   letter-spacing: -0.36px;
 }
-.VisionComponent .Visions .VisionComponentGrid .VisionComponentGridItem p {
+.VisionComponent .Visions .VisionComponentGrid .VisionComponentGridContainer .VisionComponentGridItem p {
   color: #000;
   font-family: Manrope;
   font-size: 13px;
   font-style: normal;
   font-weight: 400;
-  line-height: 18.2px; /* 140% */
+  line-height: 18.2px;
+  /* 140% */
 }/*# sourceMappingURL=index.css.map */
