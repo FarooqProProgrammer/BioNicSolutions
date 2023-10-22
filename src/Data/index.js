@@ -127,3 +127,27 @@ export const DataBase = [
     },
 
 ]
+
+
+export const AccordiaData = [
+    {
+        title:'What is a TMS, WMS, and EPOD service?',
+        Description:'A TMS (transportation management system) is a software solution that helps businesses manage their transportation operations. A WMS (warehouse management system) is a software solution that helps businesses manage their warehouse operations. An EPOD (electronic proof of delivery) system is a software solution that helps businesses track and capture proof of delivery for their shipments.',
+    },
+    {
+        title:'What are the benefits of using a TMS, WMS, and EPOD service?',
+        Description:'A TMS (transportation management system) is a software solution that helps businesses manage their transportation operations. A WMS (warehouse management system) is a software solution that helps businesses manage their warehouse operations. An EPOD (electronic proof of delivery) system is a software solution that helps businesses track and capture proof of delivery for their shipments.',
+    },
+    {
+        title:'How does Bionic Sols TMS, WMS, and EPOD service work?',
+        Description:'A TMS (transportation management system) is a software solution that helps businesses manage their transportation operations. A WMS (warehouse management system) is a software solution that helps businesses manage their warehouse operations. An EPOD (electronic proof of delivery) system is a software solution that helps businesses track and capture proof of delivery for their shipments.',
+    },
+    {
+        title:'What are the costs of Bionic Sols TMS, WMS, and EPOD service?',
+        Description:'A TMS (transportation management system) is a software solution that helps businesses manage their transportation operations. A WMS (warehouse management system) is a software solution that helps businesses manage their warehouse operations. An EPOD (electronic proof of delivery) system is a software solution that helps businesses track and capture proof of delivery for their shipments.',
+    },
+    {
+        title:'How do I get started with Bionic Sols TMS, WMS, and EPOD service?',
+        Description:'A TMS (transportation management system) is a software solution that helps businesses manage their transportation operations. A WMS (warehouse management system) is a software solution that helps businesses manage their warehouse operations. An EPOD (electronic proof of delivery) system is a software solution that helps businesses track and capture proof of delivery for their shipments.',
+    },
+]

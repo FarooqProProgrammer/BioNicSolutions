@@ -11,6 +11,8 @@ import About from './pages/About'
 import Services from './pages/Services'
 import Industires from './pages/Industries'
 import Portfolio from './pages/Portfolio'
+import ServiceCustom from './pages/ServiceCustom'
+import Logistics from './pages/Logistics'
 
 
 export default function App() {
@@ -25,6 +27,8 @@ export default function App() {
         <Route  path="/service" Component={Services} />
         <Route  path="/industries" Component={Industires} />
         <Route  path="/portfolio" Component={Portfolio} />
+        <Route  path="/service-custom-software" Component={ServiceCustom} />
+        <Route  path="/industries-logistics" Component={Logistics} />
         
       </Routes>
       <Footer />
