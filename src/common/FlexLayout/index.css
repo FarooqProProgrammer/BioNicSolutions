@@ -1,0 +1,33 @@
+.FlexLayout {
+  width: 100%;
+  display: flex;
+  border-top: 1px solid #329683;
+  margin-bottom: 20px;
+  height: 500px;
+}
+@media (max-width: 1000px) {
+  .FlexLayout {
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+  }
+}
+.FlexLayout .FlexLayoutLeft {
+  flex: 0.3;
+  border-right: 1px solid #329683;
+  padding: 20px;
+}
+@media (max-width: 1000px) {
+  .FlexLayout .FlexLayoutLeft {
+    flex: 1;
+  }
+}
+.FlexLayout .FlexLayoutRight {
+  flex: 1;
+  padding: 30px;
+}
+@media (max-width: 1000px) {
+  .FlexLayout .FlexLayoutRight {
+    width: 100%;
+  }
+}/*# sourceMappingURL=index.css.map */

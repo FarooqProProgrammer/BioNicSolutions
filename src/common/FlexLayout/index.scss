@@ -1,0 +1,32 @@
+.FlexLayout {
+    width: 100%;
+    display: flex;
+    border-top: 1px solid #329683;
+    margin-bottom: 20px;
+    height: 500px;
+
+    @media (max-width:1000px) {
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+    }
+
+    .FlexLayoutLeft {
+        flex: 0.3;
+        border-right: 1px solid #329683;
+        padding: 20px;
+
+        @media (max-width:1000px) {
+            flex: 1;
+        }
+    }
+
+    .FlexLayoutRight {
+        flex: 1;
+        padding: 30px;
+
+        @media (max-width:1000px) {
+            width: 100%;
+        }
+    }
+}
