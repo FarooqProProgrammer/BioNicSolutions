@@ -2,7 +2,7 @@ import React from 'react'
 import { useCss } from 'react-use';
 import { UppArrowIcon } from '../../assets/Icons';
 
-export default function Button({ children,bgcolor }) {
+export default function Button({ children,bgcolor,textColor,isIcon }) {
     const className = useCss({
         'display':'flex',
         'min-height': '56px',
@@ -10,13 +10,15 @@ export default function Button({ children,bgcolor }) {
         'align-items': 'center',
         'gap': '23.66px',
         'background': bgcolor ?bgcolor:"#329683",
-        'color':'white',
-        'border-radius':'40px'
+        'color':textColor?textColor:'white',
+        'border-radius':'40px',
+        'font-size':'15px'
     });
     return (
         <button className={className}>
             {children}
-            <UppArrowIcon />
+            {isIcon && <UppArrowIcon />}
+            
         </button>
     )
 }

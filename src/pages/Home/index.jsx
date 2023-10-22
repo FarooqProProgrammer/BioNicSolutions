@@ -10,6 +10,8 @@ import { FrontEnd } from '../../Data'
 import Team from '../../components/Team'
 import Approach from '../../components/Approach'
 import Company from '../../components/Company'
+import ContactBannerForm from '../../components/ContactBannerForm'
+import Insight from '../../components/Insight'
 
 
 export default function Home() {
@@ -25,6 +27,8 @@ export default function Home() {
         <TabsGroup FrontEnd={FrontEnd} isTitle={'Technology stack'} title={'Front End'} isButton />
         <Team />
         <ChooseUs />
+        <Insight />
+        <ContactBannerForm />
     </>
   )
 }
